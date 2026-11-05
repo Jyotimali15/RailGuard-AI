@@ -9,7 +9,7 @@ The app compares it with the train's arrival platform:
 ## Run
 ```
 pip install -r requirements.txt
-python app.py            # http://127.0.0.1:5000   (admin: /admin, admin / admin123)
+python app.py            # http://127.0.0.1:5000
 ```
 The database and model are already included. To rebuild everything from the dataset:
 ```
