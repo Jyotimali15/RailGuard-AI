@@ -11,7 +11,7 @@ The app compares it with the train's arrival platform:
 pip install -r requirements.txt
 python app.py            # http://127.0.0.1:5000
 ```
-The application initializes its database and loads the trained ML model.. To rebuild everything from the dataset:
+The application initializes its database and loads the trained ML model. To rebuild everything from the dataset:
 ```
 python prepare_data.py          # dataset_for_project.csv -> data/train_platforms.csv
 python generate_ml_dataset.py   # -> data/risk_training_dataset.csv (17,840 rows)
