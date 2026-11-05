@@ -1,0 +1,70 @@
+{
+  "dataset_rows": 17840,
+  "train_rows": 14272,
+  "test_rows": 3568,
+  "accuracy": 99.72,
+  "cv_accuracy_mean": 99.74,
+  "cv_accuracy_std": 0.05,
+  "majority_baseline": 85.31,
+  "class_distribution": {
+    "Low": 15222,
+    "High": 1350,
+    "Medium": 1268
+  },
+  "per_class": {
+    "High": {
+      "precision": 98.9,
+      "recall": 98.5,
+      "f1": 98.7,
+      "support": 270
+    },
+    "Medium": {
+      "precision": 97.3,
+      "recall": 98.8,
+      "f1": 98.0,
+      "support": 254
+    },
+    "Low": {
+      "precision": 100.0,
+      "recall": 99.9,
+      "f1": 100.0,
+      "support": 3044
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "High",
+      "Medium",
+      "Low"
+    ],
+    "matrix": [
+      [
+        266,
+        4,
+        0
+      ],
+      [
+        3,
+        251,
+        0
+      ],
+      [
+        0,
+        3,
+        3041
+      ]
+    ]
+  },
+  "feature_importance": {
+    "minutes_remaining": 66.5,
+    "platform_gap": 29.2,
+    "crowded": 2.3,
+    "base_walk_minutes": 2.1
+  },
+  "features": [
+    "minutes_remaining",
+    "platform_gap",
+    "base_walk_minutes",
+    "crowded"
+  ]
+}
