@@ -545,10 +545,17 @@ def admin_import_csv():
 init_db()
 load_ml_model()
 
+
 if __name__ == '__main__':
     print('=' * 60)
     print('  RAILGUARD AI SERVER READY')
     print('  Passenger app : http://127.0.0.1:5000')
     print('  Admin portal  : http://127.0.0.1:5000/admin')
     print('=' * 60)
-app.run(host="0.0.0.0", port=5000, debug=True)
+
+    app.run(
+        host='0.0.0.0',
+        port=int(os.environ.get('PORT', 5000)),
+        debug=False
+    )
+
