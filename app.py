@@ -16,6 +16,13 @@ from prepare_data import clean_rows, CLEAN_CSV
 from risk_engine import classify_risk
 
 app = Flask(__name__)
+@app.route('/sitemap.xml')
+def sitemap():
+    return send_from_directory(
+        os.path.dirname(os.path.abspath(__file__)),
+        'sitemap.xml',
+        mimetype='application/xml'
+    )
 app.secret_key = os.environ.get('SECRET_KEY', 'railguard_secret_capstone_2026')
 @app.route('/service-worker.js')
 def service_worker():
